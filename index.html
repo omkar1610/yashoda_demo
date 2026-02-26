@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<!--
+  Hotel Yashoda – Static Website
+  ================================
+  BEFORE DEPLOYING, please update the following placeholders:
+  • Phone numbers  → search for "919437000000" and "916758000000"
+  • WhatsApp link  → update wa.me numbers with real WhatsApp-enabled number
+  • Email          → replace "info@hotelyashoda.com" with actual email
+  • Google Maps    → replace the iframe src with your hotel's actual embed URL
+                     (Google Maps → Share → Embed a map → copy src)
+  • Social links   → replace facebook.com/, instagram.com/, etc. with real profile URLs
+  • og:image       → host a real photo and update the og:image meta tags
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Yashoda – Budget Hotel & Guest House in Bhadrak, Odisha</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Hotel Yashoda is a comfortable budget hotel and guest house in Bhadrak, Odisha. Offering AC & Non-AC rooms, in-house dining, free Wi-Fi, banquet facilities, and easy access to local attractions." />
+  <meta name="keywords" content="Hotel Yashoda, Bhadrak hotel, budget hotel Odisha, guest house Bhadrak, AC rooms Bhadrak, hotel near Bhadrak, Odisha hotel" />
+  <meta name="author" content="Hotel Yashoda" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://hotelyashoda.vercel.app/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hotelyashoda.vercel.app/" />
+  <meta property="og:title" content="Hotel Yashoda – Budget Hotel & Guest House in Bhadrak, Odisha" />
+  <meta property="og:description" content="Comfortable stay with AC & Non-AC rooms, in-house restaurant, free Wi-Fi, and banquet facilities in Bhadrak, Odisha." />
+  <meta property="og:image" content="https://hotelyashoda.vercel.app/images/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hotel Yashoda – Budget Hotel & Guest House in Bhadrak, Odisha" />
+  <meta name="twitter:description" content="Comfortable stay with AC & Non-AC rooms, in-house restaurant, free Wi-Fi, and banquet facilities in Bhadrak, Odisha." />
+  <meta name="twitter:image" content="https://hotelyashoda.vercel.app/images/og-image.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-icon">🏨</span>
+        Hotel Yashoda
+      </a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#rooms" class="nav__link">Rooms</a></li>
+        <li><a href="#restaurant" class="nav__link">Restaurant</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <a href="https://wa.me/919437000000?text=Hello%2C%20I%20would%20like%20to%20book%20a%20room%20at%20Hotel%20Yashoda" class="btn btn--primary nav__cta" target="_blank" rel="noopener noreferrer">
+        Book Now
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="home">
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <span class="hero__badge">⭐ Bhadrak's Trusted Budget Hotel</span>
+        <h1 class="hero__title">Welcome to<br /><span>Hotel Yashoda</span></h1>
+        <p class="hero__subtitle">Comfortable stays &amp; warm hospitality in the heart of Bhadrak, Odisha. AC &amp; Non-AC rooms, delicious dining, and every convenience at your fingertips.</p>
+        <div class="hero__cta">
+          <a href="https://wa.me/919437000000?text=Hello%2C%20I%20would%20like%20to%20book%20a%20room%20at%20Hotel%20Yashoda" class="btn btn--primary btn--lg" target="_blank" rel="noopener noreferrer">
+            📅 Book Now
+          </a>
+          <a href="#contact" class="btn btn--outline btn--lg">📞 Contact Us</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <strong>500+</strong>
+            <span>Happy Guests</span>
+          </div>
+          <div class="hero__stat">
+            <strong>AC &amp; Non-AC</strong>
+            <span>Room Options</span>
+          </div>
+          <div class="hero__stat">
+            <strong>24/7</strong>
+            <span>Reception</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <span>↓</span>
+      </a>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">About Us</span>
+          <h2 class="section__title">Your Home Away from Home</h2>
+          <p class="section__subtitle">Nestled in the heart of Bhadrak, Odisha, Hotel Yashoda has been welcoming guests with warm hospitality and affordable comfort.</p>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__image-wrap">
+            <div class="about__image-placeholder">
+              <span>🏨</span>
+              <p>Hotel Yashoda Front View</p>
+            </div>
+          </div>
+
+          <div class="about__content">
+            <p class="about__text">Hotel Yashoda is a well-established budget hotel and guest house located conveniently in Bhadrak, Odisha. We pride ourselves on providing clean, comfortable, and affordable accommodation for business travellers, pilgrims visiting nearby temples, and leisure guests exploring the region.</p>
+            <p class="about__text">Our friendly and attentive staff ensure that every guest feels at home. Whether you're here for a short business trip or a family holiday, we have everything you need under one roof — from comfortable rooms to our in-house restaurant serving authentic local cuisine.</p>
+
+            <ul class="about__features">
+              <li class="about__feature">
+                <span class="about__feature-icon">✅</span>
+                <div>
+                  <strong>Clean &amp; Comfortable Rooms</strong>
+                  <p>Regularly maintained AC and Non-AC rooms with fresh linen.</p>
+                </div>
+              </li>
+              <li class="about__feature">
+                <span class="about__feature-icon">✅</span>
+                <div>
+                  <strong>Strategic Location</strong>
+                  <p>Easily accessible from Bhadrak Railway Station and city centre.</p>
+                </div>
+              </li>
+              <li class="about__feature">
+                <span class="about__feature-icon">✅</span>
+                <div>
+                  <strong>Budget Friendly</strong>
+                  <p>Affordable rates without compromising on quality or service.</p>
+                </div>
+              </li>
+              <li class="about__feature">
+                <span class="about__feature-icon">✅</span>
+                <div>
+                  <strong>Dedicated Staff</strong>
+                  <p>Courteous and helpful team available round the clock.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ROOMS & FACILITIES ===== -->
+    <section class="rooms section section--alt" id="rooms">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Rooms &amp; Facilities</span>
+          <h2 class="section__title">Accommodation Options</h2>
+          <p class="section__subtitle">Choose from a range of well-appointed rooms designed for your comfort and convenience.</p>
+        </div>
+
+        <div class="rooms__grid">
+          <!-- Standard Non-AC Room -->
+          <div class="room-card">
+            <div class="room-card__image room-card__image--1">
+              <span class="room-card__badge">Non-AC</span>
+              <div class="room-card__placeholder">🛏️</div>
+            </div>
+            <div class="room-card__body">
+              <h3>Standard Room (Non-AC)</h3>
+              <p>Comfortable non-air-conditioned rooms ideal for budget-conscious travellers. Clean beds, attached bathroom, and TV.</p>
+              <ul class="room-card__amenities">
+                <li>🛏️ Double Bed</li>
+                <li>📺 Television</li>
+                <li>🚿 Attached Bath</li>
+                <li>📶 Free Wi-Fi</li>
+              </ul>
+              <a href="https://wa.me/919437000000?text=I%20would%20like%20to%20book%20a%20Standard%20Non-AC%20Room" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- Standard AC Room -->
+          <div class="room-card room-card--featured">
+            <div class="room-card__image room-card__image--2">
+              <span class="room-card__badge room-card__badge--gold">AC ★ Popular</span>
+              <div class="room-card__placeholder">🛏️</div>
+            </div>
+            <div class="room-card__body">
+              <h3>Standard Room (AC)</h3>
+              <p>Air-conditioned rooms for a cooler, more relaxed stay during the hot Odisha summers. Ideal for families and business guests.</p>
+              <ul class="room-card__amenities">
+                <li>🛏️ Double Bed</li>
+                <li>❄️ Air Conditioning</li>
+                <li>📺 Television</li>
+                <li>🚿 Attached Bath</li>
+                <li>📶 Free Wi-Fi</li>
+              </ul>
+              <a href="https://wa.me/919437000000?text=I%20would%20like%20to%20book%20a%20Standard%20AC%20Room" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+            </div>
+          </div>
+
+          <!-- Family Room -->
+          <div class="room-card">
+            <div class="room-card__image room-card__image--3">
+              <span class="room-card__badge">Family Room</span>
+              <div class="room-card__placeholder">🛌</div>
+            </div>
+            <div class="room-card__body">
+              <h3>Family Room</h3>
+              <p>Spacious family rooms accommodating 3–4 guests. Extra beds available on request. Perfect for family visits to Bhadrak.</p>
+              <ul class="room-card__amenities">
+                <li>🛌 Multiple Beds</li>
+                <li>❄️ Air Conditioning</li>
+                <li>📺 Television</li>
+                <li>🚿 Attached Bath</li>
+                <li>📶 Free Wi-Fi</li>
+              </ul>
+              <a href="https://wa.me/919437000000?text=I%20would%20like%20to%20book%20a%20Family%20Room" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Facilities -->
+        <div class="facilities">
+          <h3 class="facilities__title">Hotel Facilities &amp; Amenities</h3>
+          <div class="facilities__grid">
+            <div class="facility-item">
+              <span class="facility-item__icon">📶</span>
+              <span>Free Wi-Fi</span>
+            </div>
+            <div class="facility-item">
+              <span class="facility-item__icon">🅿️</span>
+              <span>Parking</span>
+            </div>
+            <div class="facility-item">
+              <span class="facility-item__icon">🍽️</span>
+              <span>In-House Restaurant</span>
+            </div>
+            <div class="facility-item">
+              <span class="facility-item__icon">🎉</span>
+              <span>Banquet Hall</span>
+            </div>
+            <div class="facility-item">
+              <span class="facility-item__icon">🔒</span>
+              <span>24/7 Security</span>
+            </div>
+            <div class="facility-item">
+              <span class="facility-item__icon">🧹</span>
+              <span>Daily Housekeeping</span>
+            </div>
+            <div class="facility-item">
+              <span class="facility-item__icon">🏧</span>
+              <span>ATM Nearby</span>
+            </div>
+            <div class="facility-item">
+              <span class="facility-item__icon">📞</span>
+              <span>24/7 Reception</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESTAURANT SECTION ===== -->
+    <section class="restaurant section" id="restaurant">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Dining</span>
+          <h2 class="section__title">In-House Restaurant</h2>
+          <p class="section__subtitle">Savour authentic Odia flavours and classic Indian dishes right at our on-site restaurant – open for breakfast, lunch, and dinner.</p>
+        </div>
+
+        <div class="restaurant__grid">
+          <div class="restaurant__info">
+            <div class="restaurant__image-placeholder">
+              🍛
+              <p>Our Restaurant</p>
+            </div>
+            <div class="restaurant__details">
+              <h3>Yashoda Diner</h3>
+              <p>Our in-house restaurant offers a warm, homely dining experience with a menu that celebrates the rich flavours of Odisha alongside popular North and South Indian dishes. Fresh ingredients, home-style cooking, and generous portions make every meal memorable.</p>
+              <div class="restaurant__timings">
+                <div class="timing">
+                  <span class="timing__meal">🌅 Breakfast</span>
+                  <span class="timing__time">7:00 AM – 10:30 AM</span>
+                </div>
+                <div class="timing">
+                  <span class="timing__meal">☀️ Lunch</span>
+                  <span class="timing__time">12:00 PM – 3:30 PM</span>
+                </div>
+                <div class="timing">
+                  <span class="timing__meal">🌙 Dinner</span>
+                  <span class="timing__time">7:00 PM – 10:30 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu">
+            <h3 class="menu__title">Sample Menu</h3>
+            <div class="menu__categories">
+              <div class="menu__category">
+                <h4>🍚 Rice &amp; Thali</h4>
+                <ul>
+                  <li>
+                    <span>Odia Thali (Full Plate)</span>
+                    <span>₹120</span>
+                  </li>
+                  <li>
+                    <span>Steamed Rice + Dal + Sabji</span>
+                    <span>₹80</span>
+                  </li>
+                  <li>
+                    <span>Veg Biryani</span>
+                    <span>₹100</span>
+                  </li>
+                  <li>
+                    <span>Chicken Biryani</span>
+                    <span>₹160</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu__category">
+                <h4>🍞 Breads &amp; Snacks</h4>
+                <ul>
+                  <li>
+                    <span>Roti / Paratha</span>
+                    <span>₹15 each</span>
+                  </li>
+                  <li>
+                    <span>Puri Sabji</span>
+                    <span>₹60</span>
+                  </li>
+                  <li>
+                    <span>Samosa (2 pcs)</span>
+                    <span>₹30</span>
+                  </li>
+                  <li>
+                    <span>Pakoda Plate</span>
+                    <span>₹50</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu__category">
+                <h4>🍗 Non-Vegetarian</h4>
+                <ul>
+                  <li>
+                    <span>Chicken Curry (half)</span>
+                    <span>₹180</span>
+                  </li>
+                  <li>
+                    <span>Mutton Curry (half)</span>
+                    <span>₹220</span>
+                  </li>
+                  <li>
+                    <span>Fish Curry (Odia style)</span>
+                    <span>₹150</span>
+                  </li>
+                  <li>
+                    <span>Egg Curry</span>
+                    <span>₹80</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu__category">
+                <h4>☕ Beverages</h4>
+                <ul>
+                  <li>
+                    <span>Chai / Tea</span>
+                    <span>₹15</span>
+                  </li>
+                  <li>
+                    <span>Coffee</span>
+                    <span>₹25</span>
+                  </li>
+                  <li>
+                    <span>Lassi (Sweet/Salt)</span>
+                    <span>₹40</span>
+                  </li>
+                  <li>
+                    <span>Cold Drinks</span>
+                    <span>₹30</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="menu__note">* Prices are indicative and subject to change. Please ask staff for current menu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials section section--alt" id="testimonials">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Guest Reviews</span>
+          <h2 class="section__title">What Our Guests Say</h2>
+          <p class="section__subtitle">Real experiences from travellers who stayed with us at Hotel Yashoda, Bhadrak.</p>
+        </div>
+
+        <div class="testimonials__grid">
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">"Excellent stay! The room was clean and well-maintained. Staff was very helpful and friendly. The food at the restaurant is absolutely delicious – the Odia Thali is a must-try! Will definitely come back."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">R</div>
+              <div>
+                <strong>Ramesh Pattnaik</strong>
+                <span>Cuttack, Odisha · Google Review</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card testimonial-card--featured">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p class="testimonial-card__text">"Best budget hotel in Bhadrak! Great value for money. AC room was nice and cool. Location is very convenient – close to the railway station. Highly recommended for anyone visiting Bhadrak."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">S</div>
+              <div>
+                <strong>Sunita Sahoo</strong>
+                <span>Bhubaneswar · Google Review</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★☆</div>
+            <p class="testimonial-card__text">"Good hotel with decent facilities. Room was comfortable and clean. The breakfast was tasty. Staff was courteous and checked in quickly. Parking was available too. Nice experience overall."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">A</div>
+              <div>
+                <strong>Anil Kumar Das</strong>
+                <span>Kolkata · MakeMyTrip Review</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rating-summary">
+          <div class="rating-summary__score">
+            <span class="rating-summary__number">4.5</span>
+            <div class="rating-summary__stars">★★★★½</div>
+            <span class="rating-summary__label">Overall Rating</span>
+          </div>
+          <div class="rating-summary__bars">
+            <div class="rating-bar">
+              <span>Cleanliness</span>
+              <div class="rating-bar__track"><div class="rating-bar__fill" style="width: 90%"></div></div>
+              <span>4.5</span>
+            </div>
+            <div class="rating-bar">
+              <span>Value</span>
+              <div class="rating-bar__track"><div class="rating-bar__fill" style="width: 92%"></div></div>
+              <span>4.6</span>
+            </div>
+            <div class="rating-bar">
+              <span>Staff</span>
+              <div class="rating-bar__track"><div class="rating-bar__fill" style="width: 88%"></div></div>
+              <span>4.4</span>
+            </div>
+            <div class="rating-bar">
+              <span>Location</span>
+              <div class="rating-bar__track"><div class="rating-bar__fill" style="width: 86%"></div></div>
+              <span>4.3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Get In Touch</span>
+          <h2 class="section__title">Contact &amp; Location</h2>
+          <p class="section__subtitle">Reach us by phone, WhatsApp, or visit us directly in Bhadrak, Odisha.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info">
+            <div class="contact-item">
+              <div class="contact-item__icon">📍</div>
+              <div>
+                <h4>Address</h4>
+                <p>Hotel Yashoda,<br />Bhadrak, Odisha – 756100<br />India</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+919437000000">+91 94370 00000</a></p>
+                <p><a href="tel:+916758000000">+91 67580 00000</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">💬</div>
+              <div>
+                <h4>WhatsApp</h4>
+                <a href="https://wa.me/919437000000?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Hotel%20Yashoda" class="btn btn--whatsapp" target="_blank" rel="noopener noreferrer">
+                  Chat on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">⏰</div>
+              <div>
+                <h4>Reception Hours</h4>
+                <p>Open 24 Hours, 7 Days a Week</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">✉️</div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:info@hotelyashoda.com">info@hotelyashoda.com</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__map">
+            <div class="map-container">
+              <iframe
+                title="Hotel Yashoda Location – Bhadrak, Odisha"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59898.84327268!2d86.47155!3d21.05798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1b4c0000000001%3A0x0!2sBhadrak%2C%20Odisha!5e0!3m2!1sen!2sin!4v1700000000000"
+                width="100%"
+                height="350"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+            <a href="https://maps.google.com/?q=Bhadrak,+Odisha,+India" class="btn btn--outline map-directions" target="_blank" rel="noopener noreferrer">
+              🗺️ Get Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">🏨 Hotel Yashoda</a>
+          <p>Your trusted budget hotel and guest house in Bhadrak, Odisha. Comfortable rooms, warm hospitality, and authentic dining — always at affordable prices.</p>
+          <div class="footer__social">
+            <a href="https://facebook.com/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://instagram.com/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://twitter.com/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="https://youtube.com/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#rooms">Rooms &amp; Facilities</a></li>
+            <li><a href="#restaurant">Restaurant</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__links">
+          <h4>Rooms</h4>
+          <ul>
+            <li><a href="#rooms">Standard Room (Non-AC)</a></li>
+            <li><a href="#rooms">Standard Room (AC)</a></li>
+            <li><a href="#rooms">Family Room</a></li>
+            <li><a href="#rooms">Banquet Hall</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h4>Contact</h4>
+          <p>📍 Bhadrak, Odisha – 756100</p>
+          <p>📞 <a href="tel:+919437000000">+91 94370 00000</a></p>
+          <p>✉️ <a href="mailto:info@hotelyashoda.com">info@hotelyashoda.com</a></p>
+          <p>⏰ 24/7 Reception</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2025 Hotel Yashoda, Bhadrak, Odisha. All rights reserved.</p>
+        <p>Designed with ❤️ for our valued guests.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
