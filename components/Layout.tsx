@@ -1,3 +1,4 @@
+import type { User } from '@supabase/supabase-js';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -11,7 +12,7 @@ interface LayoutProps {
 
 export default function Layout({ children, title = 'Hotel Yashoda' }: LayoutProps) {
   const router = useRouter();
-  const [user, setUser] = useState<unknown>(null);
+  const [user, setUser] = useState<User | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 

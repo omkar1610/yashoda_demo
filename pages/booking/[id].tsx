@@ -27,7 +27,7 @@ interface Props {
 
 declare global {
   interface Window {
-    Razorpay: any; // third-party SDK
+    Razorpay: new (options: Record<string, unknown>) => { open: () => void };
   }
 }
 

@@ -5,6 +5,13 @@ import Layout from '../components/Layout';
 import { createServiceClient } from '../services/supabaseClient';
 import { createServerSupabaseClient } from '@supabase/auth-helpers-nextjs';
 
+// Extend Window to include the Razorpay SDK
+declare global {
+  interface Window {
+    Razorpay: new (options: Record<string, unknown>) => { open: () => void };
+  }
+}
+
 interface Room {
   name: string;
 }
@@ -51,13 +58,13 @@ export default function DashboardPage({ bookings: initialBookings }: Props) {
     });
     const data = await res.json();
     if (!res.ok) return;
-    const rzp = new (window as any).Razorpay({
+    const rzp = new window.Razorpay({
       key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
       amount: data.order.amount,
       currency: data.order.currency,
       name: 'Hotel Yashoda',
       order_id: data.order.id,
-      handler: async (response: any) => {
+      handler: async (response: { razorpay_order_id: string; razorpay_payment_id: string; razorpay_signature: string }) => {
         await fetch('/api/payments/verify', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

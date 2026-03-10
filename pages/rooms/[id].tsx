@@ -1,3 +1,4 @@
+import type { User } from '@supabase/supabase-js';
 import { GetServerSideProps } from 'next';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
@@ -25,7 +26,7 @@ export default function RoomDetailPage({ room }: Props) {
   const [guestName, setGuestName] = useState('');
   const [guestEmail, setGuestEmail] = useState('');
   const [isGuest, setIsGuest] = useState(true);
-  const [user, setUser] = useState<unknown>(null);
+  const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
