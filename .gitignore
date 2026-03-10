@@ -1,0 +1,17 @@
+# Next.js
+.next/
+out/
+
+# Node.js
+node_modules/
+
+# Local environment variables (never commit to source control)
+.env.local
+.env.*.local
+
+# Build artifacts
+*.tsbuildinfo
+
+# OS files
+.DS_Store
+Thumbs.db
