@@ -4,6 +4,12 @@ import Link from 'next/link';
 import Layout from '../../components/Layout';
 import { createServiceClient } from '../../services/supabaseClient';
 
+interface RazorpayResponse {
+  razorpay_order_id: string;
+  razorpay_payment_id: string;
+  razorpay_signature: string;
+}
+
 interface Room {
   name: string;
 }
@@ -77,7 +83,7 @@ export default function BookingConfirmPage({ booking }: Props) {
         name: 'Hotel Yashoda',
         description: `Booking for ${booking.rooms?.name}`,
         order_id: data.order.id,
-        handler: async (response: any) => {
+        handler: async (response: RazorpayResponse) => {
           const verifyRes = await fetch('/api/payments/verify', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

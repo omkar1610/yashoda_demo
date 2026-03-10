@@ -8,8 +8,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (!bookingId || !amount) {
     return res.status(400).json({ error: 'Missing bookingId or amount' });
   }
-  if (typeof amount !== 'number' || amount <= 0 || amount > 1000000) {
-    return res.status(400).json({ error: 'Invalid amount: must be a positive number up to ₹10,00,000' });
+  if (typeof amount !== 'number' || amount <= 0 || amount > 100000) {
+    return res.status(400).json({ error: 'Invalid amount: must be a positive number up to ₹1,00,000' });
   }
 
   const supabase = createServiceClient();
